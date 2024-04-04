@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6cb8ff 0%, #fd90ff 100%);
+}
+#caculator {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 300px;
+  min-width: 300px;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 20px;
+  overflow: hidden;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+  place-items: center;
+}
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#display {
+  width: 100%;
+  text-align: left;
+  font-size: 50px;
+  padding: 10px;
+  height: 50px;
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  color: white;
+}
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+button:active {
+  background-color: hsl(0, 0%, 60%);
+}
+.operator-btn {
+  background-color: hsl(190, 70%, 50%);
+}
+.operator-btn:hover {
+  background-color: hsl(190, 80%, 60%);
+}
+.operator-btn:active {
+  background-color: hsl(190, 90%, 80%);
+}
+.clear-btn {
+  background-color: hsl(220, 100%, 60%);
+}
+.clear-btn:hover {
+  background-color: hsl(220, 100%, 70%);
+}
+.clear-btn:active {
+  background-color: hsl(220, 100%, 80%);
+}
